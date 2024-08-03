@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <style>
+        .calculator-body{
+            background-color: #424242;
+            height: 380px;
+            width: 400px;
+            margin: 50px auto;
+            border-radius: 15px;
+            padding: 20px;
+            padding-top: 60px;
+        }
+
+        .calculator-screen{
+            font-family: "Josefin Sans";
+            background-color: aliceblue;
+            text-align: right;
+            width: 360px;
+            display: block;
+            margin: 0 auto;
+            font-size: 30px;
+            padding: 5px 10px;
+            margin-bottom: 30px;
+        }
+
+        .button-body{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button{
+            width: 70px;
+            text-align: center;
+            padding: 2px 0;
+            font-size: 25px;
+            margin: 5px;
+            border: 0.5px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            box-shadow: 0 0 5px 0 white;
+            transition: 1s;
+        }
+
+
+        .button-equal{
+            background-color: orangered;
+            height: 85px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <input type="text" value="00" class="calculator-screen" />
+
+        <div class="button-body">
+            <button class="button">AC</button>
+            <button class="button">7</button>
+            <button class="button">4</button>
+            <button class="button">1</button>
+            <button class="button">0</button>
+
+            <button class="button">M+</button>
+            <button class="button">8</button>
+            <button class="button">2</button>
+            <button class="button">5</button>
+            <button class="button">.</button>
+
+            <button class="button">/</button>
+            <button class="button">9</button>
+            <button class="button">6</button>
+            <button class="button">3</button>
+            <button class="button">%</button>
+
+            <button class="button">X</button>
+            <button class="button">-</button>
+            <button class="button">+</button>
+            <button class="button button-equal">=</button>
+        </div>
+    </div>
+</body>
+</html>
